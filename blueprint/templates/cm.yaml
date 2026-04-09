@@ -4,3 +4,5 @@ metadata:
   name: my-config
 data:
   key: value
+  anotherKey: anotherValue
+  andAnotherKey: andAnotherValue
