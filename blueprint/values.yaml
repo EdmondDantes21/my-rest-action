@@ -1,0 +1,9 @@
+AppConfig:
+  namespace: namespacewordpress
+  username: namespacewordpress
+  password: namespacewordpress
+  urlapplicativo: inserireurlapplicativo
+  appVersion: v25.0.0
+
+Base:
+  ProjectID: sigemi-prod

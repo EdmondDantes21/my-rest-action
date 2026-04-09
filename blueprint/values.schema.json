@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "AppConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "appVersion": {
+          "default": "v25.0.0",
+          "title": "appVersion",
+          "type": "string"
+        },
+        "namespace": {
+          "default": "namespacewordpress",
+          "title": "namespace",
+          "type": "string"
+        },
+        "password": {
+          "default": "namespacewordpress",
+          "title": "password",
+          "type": "string"
+        },
+        "urlapplicativo": {
+          "default": "inserireurlapplicativo",
+          "title": "urlapplicativo",
+          "type": "string"
+        },
+        "username": {
+          "default": "namespacewordpress",
+          "title": "username",
+          "type": "string"
+        }
+      },
+      "required": [
+        "namespace",
+        "username",
+        "password",
+        "urlapplicativo",
+        "appVersion"
+      ],
+      "title": "AppConfig",
+      "type": "object"
+    },
+    "Base": {
+      "additionalProperties": false,
+      "properties": {
+        "ProjectID": {
+          "default": "sigemi-prod",
+          "title": "ProjectID",
+          "type": "string",
+          "maxLength": 32
+        }
+      },
+      "required": [
+        "ProjectID"
+      ],
+      "title": "Base",
+      "type": "object"
+    }
+  },
+  "required": [
+    "AppConfig",
+    "Base"
+  ],
+  "type": "object"
+}
